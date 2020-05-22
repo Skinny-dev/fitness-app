@@ -12,6 +12,41 @@ container.appendChild(element)
 
 import React from 'react'
 import ReactDom from 'react-dom'
+import Card from './components/Card'
+//import Cards from './components/Cards'
+
+const container  = document.getElementById('root') 
+const element = (
+    <div>
+        <Card name="andres"/>
+        <Card name="luz"/>
+        <Card name="milan"/>
+        <Card name="diego"/>
+    </div>
+)
+// const divStyle ={
+//     color : 'red',
+//     height: '10',
+//     width: '20%',
+//     padding: '2em',
+//     WebkitTransition: 'all',
+//     msTransition: 'all'
+// }
+
+// function App(){
+//     return(
+//         <div style={divStyle}>
+//             <Cards name="andres"/>
+//             <Cards name="luz"/>
+//             <Cards name="milan"/>
+//             <Cards name="diego"/>
+//         </div>
+//     );
+// }
+ReactDom.render(element, container)
+
+
+
 // by youtube 
 /* const element = <h1>Hello word </h1>
  const conteiner = document.getElementById('root') 
@@ -32,7 +67,7 @@ ReactDom.render(
   ); */
 
 
-const user = {
+/* const user = {
    firstName : 'lardin',
    lastName : 'armas',
    avatar: 'http://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
@@ -76,4 +111,4 @@ setInterval(getGreeting, 1000)
 //         document.getElementById('root')
 //     )
 // }
-// setInterval(tick, 1000);
+// setInterval(tick, 1000); */
