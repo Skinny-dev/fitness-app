@@ -1,114 +1,63 @@
-// forma clasica
-/* const element = document.createElement('h1')//creacion de elementos
-const element1 = document.createElement('h1') //ejemplo
-element.innerText ='Hello word' //al elemento le expecificamos que texto queremos mostrar
-element1.innerText = 'Hello andres'
-const container  = document.getElementById('root') //creacion del contenedor el indicador es (root) index.html
-container.appendChild(element1) //expecificacion del hijo que queremos usar
-container.appendChild(element) 
-*/
+/*
+    forma clasic en react al inciar 
 
-// shape by react
+    const element = document.createElement('h1') // creamos elemeto 
+    element.innerText = 'Hello Karla' // Texto a mostros
+    const container = document.getElementById('root') // Contenedor o indicardor es (root) index.html
+    container.appendChild(element)
+
+    fin de lo clasico 
+*/
 
 import React from 'react'
 import ReactDom from 'react-dom'
 import Card from './components/Card'
-//import Cards from './components/Cards'
-
-const container  = document.getElementById('root') 
-const element = (
-    <div>
-        <Card name="andres"/>
-        <Card name="luz"/>
-        <Card name="milan"/>
-        <Card name="diego"/>
-    </div>
-)
-// const divStyle ={
-//     color : 'red',
-//     height: '10',
-//     width: '20%',
-//     padding: '2em',
-//     WebkitTransition: 'all',
-//     msTransition: 'all'
-// }
-
-// function App(){
-//     return(
-//         <div style={divStyle}>
-//             <Cards name="andres"/>
-//             <Cards name="luz"/>
-//             <Cards name="milan"/>
-//             <Cards name="diego"/>
-//         </div>
-//     );
-// }
-ReactDom.render(element, container)
-
-
-
-// by youtube 
-/* const element = <h1>Hello word </h1>
- const conteiner = document.getElementById('root') 
- // ReactDom.render(__QUE__, __DONDE__) 
- ReactDom.render(element, conteiner)
- */ 
-// by documentation react
-
-/*const name = 'Andres armas'
-const element = <h1>Holaaa  { name }</h1>
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDom.render(
-    // by jsx 
-    element,
+    <Card
+        title = "Vete a la versh"
+        description = "El mejor contenido de vete la versh"
+        image = "https://firebasestorage.googleapis.com/v0/b/fitness-a1456.appspot.com/o/vete_versh1.jpeg?alt=media&token=d69855f7-baf0-4799-b736-bb6a930b5c26" 
+        leftColor = "#A74CF2"
+        rightColor = "#617BFB"
+    />,
     document.getElementById('root')
-    // <h1>Hello, world!</h1>,
-    // document.getElementById('root')
-  ); */
+)
 
-
-/* const user = {
-   firstName : 'lardin',
-   lastName : 'armas',
-   avatar: 'http://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
-};  
-
-function formatName(user){
-    return user.firstName + ' ' + user.lastName
-}
-function getGreeting(user){
-    if(user){
-      return <h1>Hi,  {formatName(user)}</h1>
+/*
+    const user = {
+        firstName: 'andres',
+        lastName: 'armas',
+        ege: 23,
     }
-    return <h1>Hello, Stranger.</h1>
-    
-}
+    function getName(user) {
+        return user.firstName + ' ' + user.lastName + ' ' + user.ege
+    }
+    function getGreeting(user){
+        if (user) {
+            return <h1>Hola { getName(user) }</h1>
+        }
+        return <h1>Hello stranger </h1>
+    }
+    function tick(){
+        const element = (
+            <div>
+                <h1>{getGreeting(user)}</h1>
+                <h2>It is {new Date().toLocaleString()}</h2>
+            </div>
+        )
+        ReactDom.render(
+            element,
+            document.getElementById('root')
+        )
+    }
+    setInterval(tick, 1000)
 
-const element = (
-    // <div>{getGreeting(user)}</div>
-    // <h1>tu nombre es {formatName(user)}</h1>
-    <div>
-        <h1>{getGreeting(user)}</h1>
-        <img src={user.avatar}/>
-        <h1>it is time {new Date().toLocaleTimeString()}, {new Date().toLocaleDateString()}</h1>
-    </div> 
-)
-ReactDom.render(
-    element,
-    document.getElementById('root')
-)
-setInterval(getGreeting, 1000)
+*/
 
-// function tick(){
-//     const element = (
-//         <div>
-//             <h1>Hello </h1>
-//             <h2>it is {new Date().toLocaleTimeString()}</h2>
-//         </div>
-//     );
-//     ReactDom.render(
-//         element,
-//         document.getElementById('root')
-//     )
-// }
-// setInterval(tick, 1000); */
+
+
+
+
+
